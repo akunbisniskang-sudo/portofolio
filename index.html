@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Portfo<span class="accent">lio.</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text hidden-left">
+                    <p class="subtitle">Hello, I'm</p>
+                    <h1 class="title">desainer <span class="gradient-text">Developer</span></h1>
+                    <p class="description">Building digital experiences with modern technologies. Focusing on clean
+                        code, performance, and user-centric design.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-visual hidden-right">
+                    <div class="abstract-shape">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title hidden-bottom">About <span class="accent">Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-card hidden-bottom">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Development</h3>
+                        <p>I build scalable websites and applications using the latest web technologies like React,
+                            Node.js, and modern CSS.</p>
+                    </div>
+                    <div class="about-card hidden-bottom" style="transition-delay: 100ms;">
+                        <i class="fa-solid fa-paint-brush"></i>
+                        <h3>Design</h3>
+                        <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                    </div>
+                    <div class="about-card hidden-bottom" style="transition-delay: 200ms;">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h3>Performance</h3>
+                        <p>Applications that are fast, accessible, and responsive across all devices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title hidden-bottom">Featured <span class="accent">Projects</span></h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card hidden-bottom">
+                        <!-- Link the entire card to the details page -->
+                        <a href="project-details.html" style="text-decoration: none; color: inherit; display: block;">
+                            <div class="project-image">
+                                <!-- Placeholder gradient instead of image for now -->
+                                <div class="img-placeholder p1"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>E-Commerce Dashboard</h3>
+                                <p>A comprehensive dashboard for managing products, orders, and analytics with real-time
+                                    data visualization.</p>
+                                <div class="tags">
+                                    <span>React</span>
+                                    <span>Tailwind</span>
+                                    <span>Chart.js</span>
+                                </div>
+                                <div class="project-links">
+                                    <span class="icon-link"><i class="fa-brands fa-github"></i></span>
+                                    <span class="icon-link"><i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card hidden-bottom" style="transition-delay: 100ms;">
+                        <div class="project-image">
+                            <div class="img-placeholder p2"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Management App</h3>
+                            <p>Productivity application allowing users to organize tasks with drag-and-drop
+                                functionality.</p>
+                            <div class="tags">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                                <span>SCSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="icon-link"><i class="fa-solid fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card hidden-bottom" style="transition-delay: 200ms;">
+                        <div class="project-image">
+                            <div class="img-placeholder p3"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>AI Chat Interface</h3>
+                            <p>Modern chat interface with streaming responses and elegant dark mode UI.</p>
+                            <div class="tags">
+                                <span>TypeScript</span>
+                                <span>Next.js</span>
+                                <span>OpenAI API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" class="icon-link"><i class="fa-solid fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container contact-container">
+                <div class="contact-text hidden-left">
+                    <h2 class="section-title-left">Let's <span class="gradient-text">Connect</span></h2>
+                    <p>I'm currently available for freelance work. If you have a project that needs some creative touch,
+                        let's talk.</p>
+                    <ul class="contact-details">
+                        <li><i class="fa-solid fa-envelope"></i> hello@example.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Indonesia</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form hidden-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Portfolio. Designed & Built with <i class="fa-solid fa-heart accent"></i></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

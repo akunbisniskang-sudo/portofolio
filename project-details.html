@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Portfo<span class="accent">lio.</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="project-page-hero">
+            <div class="container">
+                <a href="index.html#projects" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to
+                    Projects</a>
+                <h1 class="project-title">E-Commerce <span class="gradient-text">Dashboard</span></h1>
+                <p class="project-subtitle">Frontend Development / React / 2024</p>
+                <div class="project-meta">
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Live Demo</a>
+                    <a href="#" class="btn btn-outline"><i class="fa-brands fa-github"></i> View Code</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section project-content">
+            <div class="container">
+                <div class="project-grid">
+                    <div class="project-description hidden-left">
+                        <h2>Project <span class="accent">Overview</span></h2>
+                        <p>This E-Commerce Dashboard is a comprehensive solution designed for online retailers to manage
+                            their business operations efficiently. It provides real-time insights into sales, inventory
+                            levels, and customer behavior.</p>
+                        <p>The goal was to create a highly responsive and intuitive interface that allows users to
+                            navigate through complex data sets without feeling overwhelmed. The dashboard features a
+                            customizable layout, dark/light mode toggle, and interactive charts.</p>
+
+                        <h3>Key Features</h3>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Real-time data visualization using Chart.js</li>
+                            <li><i class="fa-solid fa-check"></i> Inventory management with CRUD operations</li>
+                            <li><i class="fa-solid fa-check"></i> Order tracking and status updates</li>
+                            <li><i class="fa-solid fa-check"></i> Customer analytics and segmentation</li>
+                            <li><i class="fa-solid fa-check"></i> Fully responsive design for mobile and desktop</li>
+                        </ul>
+                    </div>
+                    <div class="project-sidebar hidden-right">
+                        <div class="tech-stack-card">
+                            <h3>Tech Stack</h3>
+                            <div class="tags">
+                                <span>React</span>
+                                <span>Tailwind CSS</span>
+                                <span>Chart.js</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Framer Motion</span>
+                            </div>
+                        </div>
+                        <div class="challenge-card" style="margin-top: 2rem;">
+                            <h3>The Challenge</h3>
+                            <p>One of the main challenges was optimizing the performance of the dashboard when handling
+                                large datasets. Rendering thousands of data points in real-time required efficient state
+                                management and virtualization techniques.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-gallery section">
+                    <h2 class="section-title hidden-bottom">Project <span class="accent">Gallery</span></h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item hidden-bottom">
+                            <div class="img-placeholder p1" style="height: 300px;"></div>
+                            <p class="gallery-caption">Dashboard Overview</p>
+                        </div>
+                        <div class="gallery-item hidden-bottom" style="transition-delay: 100ms;">
+                            <div class="img-placeholder p2" style="height: 300px;"></div>
+                            <p class="gallery-caption">Analytics View</p>
+                        </div>
+                        <div class="gallery-item hidden-bottom" style="transition-delay: 200ms;">
+                            <div class="img-placeholder p3" style="height: 300px;"></div>
+                            <p class="gallery-caption">Mobile Responsive Layout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Reused) -->
+        <section id="contact" class="section">
+            <div class="container contact-container">
+                <div class="contact-text hidden-left">
+                    <h2 class="section-title-left">Let's <span class="gradient-text">Connect</span></h2>
+                    <p>Interested in building something similar? I'm available for freelance work.</p>
+                    <ul class="contact-details">
+                        <li><i class="fa-solid fa-envelope"></i> hello@example.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Indonesia</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form hidden-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Portfolio. Designed & Built with <i class="fa-solid fa-heart accent"></i></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
